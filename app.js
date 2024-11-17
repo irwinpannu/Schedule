@@ -46,7 +46,3 @@ app.post("/api/book", (req, res) => {
 
     res.json({ message: "Booking confirmed! You will receive a confirmation email shortly." });
 });
-
-app.use(express.static("public")); // Serve static files
-
-app.listen(3000, () => console.log("Server running on http://localhost:3000"));
